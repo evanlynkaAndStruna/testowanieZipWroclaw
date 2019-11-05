@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0483594DCA8D1896E98DE20A8B1E4797 /* Pods-testowanieZipWroclaw-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB23D0B8EB5D6B1DED05CA16835BF14A /* Pods-testowanieZipWroclaw-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DD07D701BA7F1BCD526AC5DC59592F /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E8950416BE84B91D494A383C4B0C5A5 /* Pods-testowanieZipWroclaw-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DA5728A9A825D99A5824CF86B1C1BC /* Pods-testowanieZipWroclaw-dummy.m */; };
+		39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A04AAEF195AC84408EC450D6CD51264 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DD8E593CD1E9C16A27C316ED398F1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4B9D69BCB50A3548F839401BF813452A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 992148C50390794768571D6FD48D9032 /* zip.c */; };
+		653B489882F154CF089B510A2001245C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 851E7B34C1C7F8A0E7D75DDA6637DC6A /* unzip.c */; };
+		8823E3B2CA15E4774797BE1CF330B338 /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A063694560EB6AB0ED423FBE3F61F3 /* ZipUtilities.swift */; };
+		8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E532472923B5116C3822CBFF79C98EB /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C368A7A33571EE6119126EF70DB8B91 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB2B58CBD4A42F20B0ED045EBA31D0 /* QuickZip.swift */; };
+		B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB57F223601F4A6746695F73F1B34B3E /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = B87B31DCD467A716564A036662C2ABB9 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C51301A992286D198C4BD81642150352 /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BF411E1B669E440154D46C2270398 /* Zip-dummy.m */; };
+		D75B9A275C2EF688699D3D57C27CE983 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD127B9AFD14DA3C0EDE3F2B61D3FC /* Zip.swift */; };
+		DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C394E65CAA14DF8B1D6B3DD7BEBC094 /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27850DE1088FE1B83A2F31784E1340F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F862C1CD19A69E8763D35A60F83443C2 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = ADD27C93A2BE459C5AC7243CA1C3A43B /* ioapi.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6E1DACDC679BA428E2FC0982CC20318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31708EE6929C61C0EDA6F5DAE3AF9DB7;
+			remoteInfo = Zip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0632857F398EA138DC5AD3DD2916FA13 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		0C394E65CAA14DF8B1D6B3DD7BEBC094 /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
+		1D720AEACABBCB9556297A56AEDF5270 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		1E532472923B5116C3822CBFF79C98EB /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A04AAEF195AC84408EC450D6CD51264 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
+		43ABD4FA1746462B3142B3D150AA00C9 /* Pods-testowanieZipWroclaw-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testowanieZipWroclaw-frameworks.sh"; sourceTree = "<group>"; };
+		4ED5E1A15DB0385A5CBA951AF6072416 /* Pods-testowanieZipWroclaw-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testowanieZipWroclaw-Info.plist"; sourceTree = "<group>"; };
+		4EFB2B58CBD4A42F20B0ED045EBA31D0 /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
+		516E9DC346BD77259F311D2670E19C40 /* Pods-testowanieZipWroclaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testowanieZipWroclaw.release.xcconfig"; sourceTree = "<group>"; };
+		58E9756AC75566C997EB9CDA700D4A74 /* Pods_testowanieZipWroclaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testowanieZipWroclaw.framework; path = "Pods-testowanieZipWroclaw.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3B01B127FA555BAC9A862DDFAA7BE6 /* Pods-testowanieZipWroclaw-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testowanieZipWroclaw-acknowledgements.markdown"; sourceTree = "<group>"; };
+		691864A6451F836846397779485F4AB1 /* Pods-testowanieZipWroclaw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testowanieZipWroclaw.debug.xcconfig"; sourceTree = "<group>"; };
+		712BF411E1B669E440154D46C2270398 /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		851E7B34C1C7F8A0E7D75DDA6637DC6A /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		992148C50390794768571D6FD48D9032 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		99514C0B29A5B1600BD74A3C6DC03B8C /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
+		9C4A5E61BE148CE08CEAE4B1150DB651 /* Zip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zip-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1DA5728A9A825D99A5824CF86B1C1BC /* Pods-testowanieZipWroclaw-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testowanieZipWroclaw-dummy.m"; sourceTree = "<group>"; };
+		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD27C93A2BE459C5AC7243CA1C3A43B /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		B74FC8E268A962EB79E00ED4B489346A /* Pods-testowanieZipWroclaw-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testowanieZipWroclaw-acknowledgements.plist"; sourceTree = "<group>"; };
+		B87B31DCD467A716564A036662C2ABB9 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		BAB9161D9D2213FB7C0FF84CD8BCC990 /* Pods-testowanieZipWroclaw.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testowanieZipWroclaw.modulemap"; sourceTree = "<group>"; };
+		BB57F223601F4A6746695F73F1B34B3E /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
+		CB23D0B8EB5D6B1DED05CA16835BF14A /* Pods-testowanieZipWroclaw-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testowanieZipWroclaw-umbrella.h"; sourceTree = "<group>"; };
+		D8A063694560EB6AB0ED423FBE3F61F3 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		F5AD127B9AFD14DA3C0EDE3F2B61D3FC /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
+		F5DD07D701BA7F1BCD526AC5DC59592F /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E83557DE587B3C5E04574AD89026332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD8E593CD1E9C16A27C316ED398F1EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36A974C24253DDC321A08381BAD56B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27850DE1088FE1B83A2F31784E1340F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B7D0CA4E75D36DC11D96D81A9BF121B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58E9756AC75566C997EB9CDA700D4A74 /* Pods_testowanieZipWroclaw.framework */,
+				A845402EF959A57A4640F2A4F5155943 /* Zip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CBE754E1C848AAF6A3E39D22D812714 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD07D701BA7F1BCD526AC5DC59592F /* crypt.h */,
+				ADD27C93A2BE459C5AC7243CA1C3A43B /* ioapi.c */,
+				3A04AAEF195AC84408EC450D6CD51264 /* ioapi.h */,
+				4EFB2B58CBD4A42F20B0ED045EBA31D0 /* QuickZip.swift */,
+				851E7B34C1C7F8A0E7D75DDA6637DC6A /* unzip.c */,
+				1E532472923B5116C3822CBFF79C98EB /* unzip.h */,
+				992148C50390794768571D6FD48D9032 /* zip.c */,
+				B87B31DCD467A716564A036662C2ABB9 /* zip.h */,
+				0C394E65CAA14DF8B1D6B3DD7BEBC094 /* Zip.h */,
+				F5AD127B9AFD14DA3C0EDE3F2B61D3FC /* Zip.swift */,
+				D8A063694560EB6AB0ED423FBE3F61F3 /* ZipUtilities.swift */,
+				3C53D6CB19D9EB3814EE6268C7C9AD43 /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		282DCD73CA9EEB51FF77D65E3038C336 /* Pods-testowanieZipWroclaw */ = {
+			isa = PBXGroup;
+			children = (
+				BAB9161D9D2213FB7C0FF84CD8BCC990 /* Pods-testowanieZipWroclaw.modulemap */,
+				5A3B01B127FA555BAC9A862DDFAA7BE6 /* Pods-testowanieZipWroclaw-acknowledgements.markdown */,
+				B74FC8E268A962EB79E00ED4B489346A /* Pods-testowanieZipWroclaw-acknowledgements.plist */,
+				A1DA5728A9A825D99A5824CF86B1C1BC /* Pods-testowanieZipWroclaw-dummy.m */,
+				43ABD4FA1746462B3142B3D150AA00C9 /* Pods-testowanieZipWroclaw-frameworks.sh */,
+				4ED5E1A15DB0385A5CBA951AF6072416 /* Pods-testowanieZipWroclaw-Info.plist */,
+				CB23D0B8EB5D6B1DED05CA16835BF14A /* Pods-testowanieZipWroclaw-umbrella.h */,
+				691864A6451F836846397779485F4AB1 /* Pods-testowanieZipWroclaw.debug.xcconfig */,
+				516E9DC346BD77259F311D2670E19C40 /* Pods-testowanieZipWroclaw.release.xcconfig */,
+			);
+			name = "Pods-testowanieZipWroclaw";
+			path = "Target Support Files/Pods-testowanieZipWroclaw";
+			sourceTree = "<group>";
+		};
+		3C53D6CB19D9EB3814EE6268C7C9AD43 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0632857F398EA138DC5AD3DD2916FA13 /* Zip.modulemap */,
+				99514C0B29A5B1600BD74A3C6DC03B8C /* Zip.xcconfig */,
+				712BF411E1B669E440154D46C2270398 /* Zip-dummy.m */,
+				9C4A5E61BE148CE08CEAE4B1150DB651 /* Zip-Info.plist */,
+				1D720AEACABBCB9556297A56AEDF5270 /* Zip-prefix.pch */,
+				BB57F223601F4A6746695F73F1B34B3E /* Zip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Zip";
+			sourceTree = "<group>";
+		};
+		A4F2E94E30BBA74A40EA91CEF3091A3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CBE754E1C848AAF6A3E39D22D812714 /* Zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A4F2E94E30BBA74A40EA91CEF3091A3A /* Pods */,
+				0B7D0CA4E75D36DC11D96D81A9BF121B /* Products */,
+				E043918803ECAE18789FD3A5C2AC930E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E043918803ECAE18789FD3A5C2AC930E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				282DCD73CA9EEB51FF77D65E3038C336 /* Pods-testowanieZipWroclaw */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		330A825ACBC8728C72CC09913D0FE735 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */,
+				39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */,
+				8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */,
+				B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */,
+				DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */,
+				BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE7EA2BD09F95F02FD7448ADA11D210 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0483594DCA8D1896E98DE20A8B1E4797 /* Pods-testowanieZipWroclaw-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */;
+			buildPhases = (
+				330A825ACBC8728C72CC09913D0FE735 /* Headers */,
+				ED9BC8E6AC112461613C834DACDAB1EF /* Sources */,
+				7E83557DE587B3C5E04574AD89026332 /* Frameworks */,
+				05A919DA9135F97A03AC971800714018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zip;
+			productName = Zip;
+			productReference = A845402EF959A57A4640F2A4F5155943 /* Zip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1B82E4F119389A71C8E0A4C8748688C /* Pods-testowanieZipWroclaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC04D9ED2E3D9101252E405C3F20350D /* Build configuration list for PBXNativeTarget "Pods-testowanieZipWroclaw" */;
+			buildPhases = (
+				FAE7EA2BD09F95F02FD7448ADA11D210 /* Headers */,
+				7F98E37FFD0696CD264D3B285A9FC46F /* Sources */,
+				A36A974C24253DDC321A08381BAD56B7 /* Frameworks */,
+				41C674E15B70340CB815F99CA258F928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6356562A703BA4374FBEEE9415F8DE37 /* PBXTargetDependency */,
+			);
+			name = "Pods-testowanieZipWroclaw";
+			productName = "Pods-testowanieZipWroclaw";
+			productReference = 58E9756AC75566C997EB9CDA700D4A74 /* Pods_testowanieZipWroclaw.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0B7D0CA4E75D36DC11D96D81A9BF121B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1B82E4F119389A71C8E0A4C8748688C /* Pods-testowanieZipWroclaw */,
+				31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05A919DA9135F97A03AC971800714018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C674E15B70340CB815F99CA258F928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F98E37FFD0696CD264D3B285A9FC46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E8950416BE84B91D494A383C4B0C5A5 /* Pods-testowanieZipWroclaw-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9BC8E6AC112461613C834DACDAB1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F862C1CD19A69E8763D35A60F83443C2 /* ioapi.c in Sources */,
+				9C368A7A33571EE6119126EF70DB8B91 /* QuickZip.swift in Sources */,
+				653B489882F154CF089B510A2001245C /* unzip.c in Sources */,
+				C51301A992286D198C4BD81642150352 /* Zip-dummy.m in Sources */,
+				4B9D69BCB50A3548F839401BF813452A /* zip.c in Sources */,
+				D75B9A275C2EF688699D3D57C27CE983 /* Zip.swift in Sources */,
+				8823E3B2CA15E4774797BE1CF330B338 /* ZipUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6356562A703BA4374FBEEE9415F8DE37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */;
+			targetProxy = F6E1DACDC679BA428E2FC0982CC20318 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		047106F21977B6C2BF8B641554B85D7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516E9DC346BD77259F311D2670E19C40 /* Pods-testowanieZipWroclaw.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testowanieZipWroclaw/Pods-testowanieZipWroclaw-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testowanieZipWroclaw/Pods-testowanieZipWroclaw.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14CE01D93B49CE32EF37D4C406344EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99514C0B29A5B1600BD74A3C6DC03B8C /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F2AED2D941F434257C1237BF45EE778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99514C0B29A5B1600BD74A3C6DC03B8C /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A2E935A7203B8A273FD788693DF937B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691864A6451F836846397779485F4AB1 /* Pods-testowanieZipWroclaw.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testowanieZipWroclaw/Pods-testowanieZipWroclaw-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testowanieZipWroclaw/Pods-testowanieZipWroclaw.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2AED2D941F434257C1237BF45EE778 /* Debug */,
+				14CE01D93B49CE32EF37D4C406344EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC04D9ED2E3D9101252E405C3F20350D /* Build configuration list for PBXNativeTarget "Pods-testowanieZipWroclaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E935A7203B8A273FD788693DF937B7 /* Debug */,
+				047106F21977B6C2BF8B641554B85D7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
