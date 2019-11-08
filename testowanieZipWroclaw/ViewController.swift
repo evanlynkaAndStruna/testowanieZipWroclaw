@@ -52,22 +52,29 @@ class ViewController: UIViewController {
     
     func readAllData(){
         let stations = readStations()
-        let stopTimes = readStop_times(stationID: stations![0].zespol)
-        let trips = readTrips()
-        let routes = readRoutes()
+        getLines(for: Array(repeating: stations![0], count: 10))
     }
     
-    func getLines(for station: Station){
-        let stopTimes = readStop_times(stationID: station.zespol)
+    func getLines(for stations: [Station]){
+        let stopTimes = readStop_times()
         let trips = readTrips()
-        var tripsFiltered = [Trip]()
-        if let trips = trips, let stopTimes = stopTimes{
-            for time in stopTimes{
-                tripsFiltered += trips.filter(){$0.trip_id == time.trip_id}
+        //let routes = readRoutes()
+    
+        let stops = stations.compactMap(){return Stops(zespol: $0.zespol, nazwa_zespolu: $0.nazwa_zespolu, lon: $0.dlug_geo, lat: $0.szer_geo, stop_times: nil)}
+        
+        var lines = [Lines]()
+        
+        for stop in stops{
+            stop.stop_times = stopTimes?.filter(){$0.zespol == stop.zespol}
+            guard stop.stop_times != nil else {continue}
+            for time in stop.stop_times!{
+                time.trip = trips?.first(where: {$0.trip_id == time.trip_id})
+                guard time.trip != nil else {continue}
+                if !lines.contains(where: {$0.value == time.trip!.linia}){
+                    lines.append(Lines(value:time.trip!.linia))
+                }
             }
         }
-        
-        var
     }
     
     func readStations() -> [Station]?{
@@ -85,7 +92,6 @@ class ViewController: UIViewController {
                 let row = cont.components(separatedBy: ",")
                 let station = Station(zespol: row[0], slupek: "", nazwa_zespolu: String(row[2]).replacingOccurrences(of: "\"", with: ""), szer_geo: Double(row[3])!, dlug_geo: Double(row[4])!, distance: nil)
                 stations.append(station)
-                print(station.nazwa_zespolu)
             }
         }catch{
             print(error)
@@ -94,7 +100,7 @@ class ViewController: UIViewController {
         return stations
     }
     
-    func readStop_times(stationID : String) -> [Stop_times]?{
+    func readStop_times() -> [Stop_times]?{
         let manager = FileManager()
         var stopTimes = [Stop_times]()
         do{
@@ -107,10 +113,8 @@ class ViewController: UIViewController {
             contentTrunc.removeLast()
             for cont in contentTrunc{
                 let row = cont.components(separatedBy: ",")
-                guard row[3] == stationID else {continue}
-                let stopTime = Stop_times(odjazd: row[2], zespol: row[3], trip_id: row[0])
+                let stopTime = Stop_times(odjazd: row[2], zespol: row[3], trip_id: row[0], trip: nil)
                 stopTimes.append(stopTime)
-                print(stopTime.odjazd)
             }
         }catch{
             print(error)
@@ -132,9 +136,9 @@ class ViewController: UIViewController {
             contentTrunc.removeLast()
             for cont in contentTrunc{
                 let row = cont.components(separatedBy: ",")
-                let trip = Trip(route_id: row[0], trip_id: row[2], kierunek: row[3], brygada: row[6])
+                let kier = row[3].replacingOccurrences(of: "\"", with: "").replacingOccurrences(of: "\\", with: "")
+                let trip = Trip(linia: row[0], trip_id: row[2], kierunek: kier, brygada: row[6])
                 trips.append(trip)
-                print(trip.brygada)
             }
         }catch{
             print(error)
@@ -158,7 +162,6 @@ class ViewController: UIViewController {
                 let row = cont.components(separatedBy: ",")
                 let route = Routes(route_id: row[0], linia: row[2])
                 routes.append(route)
-                print(route.linia)
             }
         }catch{
             print(error)
@@ -169,22 +172,67 @@ class ViewController: UIViewController {
     
 }
 
-struct Routes{
+class Routes{
+    internal init(route_id: String, linia: String) {
+        self.route_id = route_id
+        self.linia = linia
+    }
+    
     let route_id : String
     let linia : String
 }
 
-struct Trip{
-    let route_id : String
+class Trip{
+    internal init(linia: String, trip_id: String, kierunek: String, brygada: String) {
+        self.linia = linia
+        self.trip_id = trip_id
+        self.kierunek = kierunek
+        self.brygada = brygada
+    }
+    
+    let linia : String
     let trip_id : String
     let kierunek : String
     let brygada : String
 }
 
-struct Stop_times{
-    var odjazd : String
-    var zespol : String
-    var trip_id : String
+class Stop_times{
+    internal init(odjazd: String, zespol: String, trip_id: String, trip: Trip?) {
+        self.odjazd = odjazd
+        self.zespol = zespol
+        self.trip_id = trip_id
+        self.trip = trip
+    }
+    
+    let odjazd : String
+    let zespol : String
+    let trip_id : String
+    var trip : Trip?
+}
+
+class Stops{
+    internal init(zespol: String, nazwa_zespolu: String, lon: Double, lat: Double, stop_times: [Stop_times]?) {
+        self.zespol = zespol
+        self.nazwa_zespolu = nazwa_zespolu
+        self.lon = lon
+        self.lat = lat
+        self.stop_times = stop_times
+    }
+    
+    let zespol : String
+    let nazwa_zespolu : String
+    let lon : Double
+    let lat : Double
+    var stop_times : [Stop_times]?
+}
+
+
+class Lines : Codable{
+    internal init(value: String) {
+        self.value = value
+    }
+    
+    let value : String
 }
 
 class Station: Codable{
@@ -203,4 +251,5 @@ class Station: Codable{
     var szer_geo : Double
     var dlug_geo : Double
     var distance : Int?
+    var lines : [Lines]?
 }
